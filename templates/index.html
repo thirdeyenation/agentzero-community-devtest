@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Zero Interface</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>Agent Zero</h1>
+    <input type="text" id="user-input" placeholder="Enter your request...">
+    <button onclick="processInput()">Submit</button>
+    <div id="result"></div>
+
+    <script>
+        function processInput() {
+            const input = document.getElementById('user-input').value;
+            axios.post('/process', { input: input })
+                .then(response => {
+                    document.getElementById('result').innerText = response.data.result;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+    </script>
+</body>
+</html>
