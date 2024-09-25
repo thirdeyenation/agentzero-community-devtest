@@ -86,19 +86,21 @@ A detailed setup guide with a video can be found here: [/docs/installation](http
 > ⚠️ **Changes to launch files since v0.6:**  
 > main.py file has been replaced with run_ui.py (webui) and run_cli.py (terminal) launch files.
 > configuration has been moved to initialize.py for both webui and terminal launch files.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Agent Zero
+# ############################################ #
+###         **Agent Zero Dev. Branch**       ###  
+### CHANGES, NOTES, & IMPORTANT INSTRUCTIONS ###
+# ############################################ #
 
-## Recent Updates
+# NOTES & IMPORTANT INSTRUCTIONS
 
-### Enhanced Integration Testing
-We've implemented a comprehensive suite of integration tests to ensure the proper interaction between various components of Agent Zero.
-
-#### Features:
+1) **Enhanced Integration Testing**
+I've implemented a comprehensive suite of integration tests to ensure the proper interaction between various components of Agent Zero.
+# Features:
 - Tests for interaction between Agent, ContentFilter, HumanVerification, BiasDetector, and ErrorHandler
 - Scenarios covered include content filtering, bias detection, and error handling
 - Mock objects used for external dependencies to focus on inter-component interactions
-
 #### Running Integration Tests:
 To run the integration tests, use the following command from the project root:
 
@@ -108,9 +110,75 @@ python -m unittest tests.test_integration
 
 These tests are crucial for maintaining the reliability and correctness of Agent Zero as the system evolves. They should be run after any significant changes to ensure that all components still work together as expected.
 
+# RECENT CHANGES 
+1) 
+- Added agent_zero folder to Root Directory. -> /Agent-Zero-0.6.2/agent_zero 
+- Within agent_zero folder: 
+  vector_db.py, 
+  security.py, 
+  knowledge_base.py, 
+  config,py, 
+  _init_.py. 
+- Within agent_zero folder, find sub-folder, continuous_learning. -> /Agent-Zero-0.6.2/agent_zero/continuous_learning 
+- Within continuous_learning sub-folder: 
+  performance_anaylzer.py, 
+  knowldge_integrator.py, 
+  interacction_logger.py, 
+  human_verification.py, 
+  feedback_collector.py, 
+  data_collecter.py, 
+  bias_detector.py, 
+  _init_.py 
+
+2) 
+- Updated agent.tools.md prompt
+
+3) 
+- Updated agent.system.md prompt
+
+4) 
+- Added files to /Agent-Zero-0.6.2/python/helpers
+  bias.detector.py
+  content_filter.py
+  human_verification.py
+  reasoning_engine.py
+
+5) 
+- Added "tests" folder to Root Directory. -> /Agent-Zero-0.6.2/tests
+- Sub-folder "helpers" added to "tests" folder. -> /Agent-Zero-0.6.2/tests/helpers
+  Files added to "helpers" sub-folder: 
+  _init_.py, 
+  human_verification.py, 
+  test_bias_detector.py, 
+  test_content_filter.py, 
+  test_error_handler.py, 
+  test_integration.py, 
+  test_reasoning_engine.py
+
+6) 
+- Added files to Root Directory: 
+  cognitive_architecture.py
+  continual_learning.py
+  dynamic_tools.py
+  ethics.py
+  explainable_ai.py
+  integration_tests.py
+  orchestrator.py
+  multi_agent.py
+  models.py
+  performance_optimizer.py
+  reasoning.py
+  scalability_tests.py
+  security.py
+
+# CHANGES
+1) Added Roadmap in -> /docs/build/doctrees/RoadMap 
+
 ## Next Steps
 - Develop advanced reasoning capabilities
 - Enhance multi-modal interaction support
 - Implement continuous learning mechanisms
 
 ...
+
+# ISSUES

@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Agent Zero API Documentation'
+project = 'Agent Zero Dev.Test Branch'
 copyright = '2024, Dylan Radske (Agent Zero Community)'
 author = 'Dylan Radske (Agent Zero Community)'
-release = '0.6.2'
+release = '0.0.2'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
